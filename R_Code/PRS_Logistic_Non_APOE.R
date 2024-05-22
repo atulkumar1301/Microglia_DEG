@@ -18,7 +18,7 @@ PRS_4 <- fread ("p_value_5e-05.sscore") %>% merge(Full_File, by = 'IID')
 PRS_5 <- fread ("p_value_5e-06.sscore") %>% merge(Full_File, by = 'IID')
 PRS_6 <- fread ("p_value_5e-07.sscore") %>% merge(Full_File, by = 'IID')
 PRS_7 <- fread ("p_value_5e-08.sscore") %>% merge(Full_File, by = 'IID')
-df <- Clinical_data [, -1:-35]
+df <- Clinical_data [, -1:-36]
 for (p in colnames (df)) {
   i = 1
   
